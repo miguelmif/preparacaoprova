@@ -25,3 +25,5 @@ const styles = StyleSheet.create({
     fontSize: 18
   }
 });
+
+export default styles;
