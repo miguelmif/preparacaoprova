@@ -1,8 +1,13 @@
 import React from "react";
 import { View, Text, KeyboardAvoidingView, TextInput } from "react-native";
 import { MaterialIcons, Entypo } from "@expo/vector-icons";
+import Button from "../../components/Button";
 
 export default function Login() {
+  async function handleSignIn() {
+    console.log("Login");
+  }
+
   return (
     <View>
       <KeyboardAvoidingView>
@@ -23,6 +28,8 @@ export default function Login() {
             autoCapitalize="none"
           />
         </View>
+        <Button title="Login" type="green" onPress={handleSignIn} />
+        <Button title="Cadastre-se" type="purple" onPress={handleSignIn} />
       </KeyboardAvoidingView>
     </View>
   );
