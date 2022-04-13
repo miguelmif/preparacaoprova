@@ -11,11 +11,13 @@ const styles = StyleSheet.create({
     fontSize: 30,
     fontWeight: "bold",
     textAlign: "center",
-    color: colors.green
+    color: colors.green,
+    marginBottom: 20,
   },
   formRow: {
     margin: 10,
     flexDirection: "row",
+    alignItems: "center",
     borderWidth: 1,
     borderColor: colors.green,
     borderRadius: 5,
@@ -28,11 +30,12 @@ const styles = StyleSheet.create({
   input: {
     fontSize: 18,
     padding: 5,
-    width: "50%"
+    width: "80%"
   },
   icon: {
     fontSize: 24,
     color: colors.green,
+    padding: 10
   }
 })
 
