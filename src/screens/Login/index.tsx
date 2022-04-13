@@ -14,7 +14,7 @@ export default function Login() {
       <KeyboardAvoidingView>
         <Text style={styles.title}>Login</Text>
         <View style={styles.formRow}>
-          <MaterialIcons name="email" size={24} color="black" />
+          <MaterialIcons name="email" style={styles.icon} />
           <TextInput
             style={styles.input}
             placeholder="Email"
@@ -23,7 +23,7 @@ export default function Login() {
           />
         </View>
         <View style={styles.formRow}>
-          <Entypo name="key" size={24} color="black" />
+          <Entypo name="key" style={styles.icon} />
           <TextInput
             style={styles.input}
             placeholder="Senha"

@@ -28,7 +28,11 @@ const styles = StyleSheet.create({
   input: {
     fontSize: 18,
     padding: 5,
-
+    width: "50%"
+  },
+  icon: {
+    fontSize: 24,
+    color: colors.green,
   }
 })
 
