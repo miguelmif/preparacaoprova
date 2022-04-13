@@ -2,6 +2,7 @@ import React from "react";
 import { View, Text, KeyboardAvoidingView, TextInput } from "react-native";
 import { MaterialIcons, Entypo } from "@expo/vector-icons";
 import Button from "../../components/Button";
+import styles from "./styles";
 
 export default function Login() {
   async function handleSignIn() {
@@ -9,7 +10,7 @@ export default function Login() {
   }
 
   return (
-    <View>
+    <View style={styles.container}>
       <KeyboardAvoidingView>
         <Text>Login</Text>
         <View>
