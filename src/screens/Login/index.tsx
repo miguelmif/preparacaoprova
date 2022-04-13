@@ -12,18 +12,20 @@ export default function Login() {
   return (
     <View style={styles.container}>
       <KeyboardAvoidingView>
-        <Text>Login</Text>
-        <View>
+        <Text style={styles.title}>Login</Text>
+        <View style={styles.formRow}>
           <MaterialIcons name="email" size={24} color="black" />
           <TextInput
+            style={styles.input}
             placeholder="Email"
             keyboardType="email-address"
             autoCapitalize="none"
           />
         </View>
-        <View>
+        <View style={styles.formRow}>
           <Entypo name="key" size={24} color="black" />
           <TextInput
+            style={styles.input}
             placeholder="Senha"
             secureTextEntry={true}
             autoCapitalize="none"
