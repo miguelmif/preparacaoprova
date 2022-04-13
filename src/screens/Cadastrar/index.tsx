@@ -9,10 +9,14 @@ import {
 import { MaterialIcons, Entypo, Ionicons } from "@expo/vector-icons";
 import Button from "../../components/Button";
 import styles from "./styles";
+import { LoginTypes } from "../../types/Screen.types";
 
-export default function Cadastrar() {
+export default function Cadastrar({ navigation }: LoginTypes) {
   async function handleSignIn() {
     console.log("Cadastrar");
+  }
+  function handleLogin() {
+    navigation.navigate("Login");
   }
 
   return (
@@ -45,8 +49,8 @@ export default function Cadastrar() {
               autoCapitalize="none"
             />
           </View>
-          <Button title="Login" type="green" onPress={handleSignIn} />
-          <Button title="Cadastre-se" type="purple" onPress={handleSignIn} />
+          <Button title="Salvar" type="green" onPress={handleSignIn} />
+          <Button title="Voltar" type="purple" onPress={handleLogin} />
         </KeyboardAvoidingView>
       </ImageBackground>
     </View>
