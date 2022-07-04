@@ -1,13 +1,10 @@
-
-
-
 export default {
-  black: '#000000',
-  white: '#ffffff',
-  primary: '#455A64',
-  primaryLight: '#CFD8DC',
-  secondary: '#7E57C2',
-  secondaryLight: '#B39DDB',
-  third: '#FFB74D',
-  thirdLight: '#FFE9CA'
+    white: '#FFFFFF',
+    black: '#000000',
+    lightGrey: '#CFD8DC',
+    darkGrey: '#455A64',
+    lightBlue: '#C5CAE9',
+    darkBlue: '#3F51B5',
+    lightRed: '#FFCDD2',
+    darkRed: '#EF5350',
 }

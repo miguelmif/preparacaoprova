@@ -1,18 +1,16 @@
 import React from "react";
-import { View, Text, ImageBackground, Image, TextInput } from "react-native";
+import { Text, TextInput, SafeAreaView } from "react-native";
 import CardSocial from "../../components/CardSocial";
 import { FontAwesome5 } from "@expo/vector-icons";
 import styles from "./styles";
 import Button from "../../components/Button";
 
+/* Se tiver algum erro de import verifique os nomes dos seus aquivos e dos seus exports ou se você esqueceu de importar algum componente */
+
 export default function Perfil() {
   return (
-    <ImageBackground
-      source={require("../../assets/fundo.png")}
-      style={styles.container}
-    >
-      <Image source={require("../../assets/lazaro.png")} />
-      <Text style={styles.title}>Lázaro Eduardo da Silva</Text>
+    <SafeAreaView>
+      <Text style={styles.title}>Nome do usuário</Text>
       <CardSocial>
         <>
           <FontAwesome5 name="facebook" style={styles.icon} />
@@ -33,15 +31,15 @@ export default function Perfil() {
       </CardSocial>
       <Button
         title="Salvar"
-        type="third"
+        type="button"
         onPress={() => console.log("Salvar")}
       />
       <Button
         title="Alterar Senha"
-        type="third"
+        type="button"
         onPress={() => console.log("Alterar Senha")}
       />
-      <Button title="Sair" type="third" onPress={() => console.log("Sair")} />
-    </ImageBackground>
+      <Button title="Sair" type="button" onPress={() => console.log("Sair")} />
+    </SafeAreaView>
   );
 }

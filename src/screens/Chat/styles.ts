@@ -9,7 +9,7 @@ const styles = StyleSheet.create({
   },
   rowSearch: {
     flexDirection: 'row',
-    backgroundColor: colors.primaryLight,
+    backgroundColor: colors.lightBlue,
     borderRadius: 10,
     margin: 10,
     alignItems: 'center',

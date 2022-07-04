@@ -7,11 +7,18 @@ export default function Button({ onPress, type, title, ...rest }: ButtonProps) {
   return (
     <TouchableOpacity
       style={
-        type == "primary"
-          ? styles.buttonPrimary
-          : type == "third"
-          ? styles.buttonThird
-          : styles.buttonSecondary
+
+        styles.button
+
+          /* 
+          
+            Usar se tiver mais de 1 tipo de botão, no caso teria que adicionar nas interfaces
+
+          type == "nome do button"
+          ? styles.nomeDoEstilo
+          
+          */
+
       }
       onPress={onPress}
       {...rest}
